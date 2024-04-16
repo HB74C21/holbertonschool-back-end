@@ -31,8 +31,7 @@ def get_todo_progress(employee_id):
     name_employee = get_users_api_url['name']
 
     print(f"Employee {name_employee} is done with tasks"
-        f"({total_task_completed}/{all_task_check}): ")
-
+          f"({total_task_completed}/{all_task_check}): ")
 
     for task in task_completed:
         print(f"\t {task['title']}")
