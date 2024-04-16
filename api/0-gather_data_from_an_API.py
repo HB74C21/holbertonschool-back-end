@@ -9,7 +9,7 @@ from sys import argv
 
 
 def get_todo_progress(employee_id):
-    """ """
+    """Retrieve and print the employee's TODO list progress."""
 
     users_api_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
 
@@ -30,8 +30,9 @@ def get_todo_progress(employee_id):
 
     name_employee = get_users_api_url['name']
 
-    print(f"Employee {name_employee} is done with tasks \
-        {total_task_completed}/{all_task_check}: ")
+    print(f"Employee {name_employee} is done with tasks"
+        f"({total_task_completed}/{all_task_check}): ")
+
 
     for task in task_completed:
         print(f"\t {task['title']}")
