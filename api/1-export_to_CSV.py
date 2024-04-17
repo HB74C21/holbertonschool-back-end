@@ -23,7 +23,7 @@ def get_todo_progress(employee_id):
 
     task_completed = [task_check for task_check in get_users_todo_api_url]
 
-    name_employee = get_users_api_url['name']
+    name_employee = get_users_api_url['username']
 
     csv_filename = f"{employee_id}.csv"
     csv_file = open(csv_filename, "w", newline="")
