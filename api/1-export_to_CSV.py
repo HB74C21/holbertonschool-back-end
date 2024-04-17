@@ -4,8 +4,8 @@ A Python script that, using the JSONPlaceholder REST API
 retrieves information about a user's TODO list progress.
 """
 
-import requests
 import csv
+import requests
 from sys import argv
 
 
